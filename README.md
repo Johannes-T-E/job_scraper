@@ -6,11 +6,13 @@ Collects job listings from a Norwegian classifieds marketplace and saves them to
 
 ## Quick start
 
-Run these from inside the `job_scraper` folder. Output goes to `data/jobs.sqlite3`. A full run takes a while.
+Clone the repo, then run everything from inside the `job_scraper` folder. Output goes to `data/jobs.sqlite3`. A full run takes a while.
 
 ### Windows — first time
 
 ```powershell
+git clone https://github.com/Johannes-T-E/job_scraper.git
+cd job_scraper
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
@@ -20,6 +22,7 @@ python run_scraper.py
 ### Windows — every run after
 
 ```powershell
+cd job_scraper
 .venv\Scripts\activate
 python run_scraper.py
 ```
@@ -27,6 +30,8 @@ python run_scraper.py
 ### Mac / Linux — first time
 
 ```bash
+git clone https://github.com/Johannes-T-E/job_scraper.git
+cd job_scraper
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -36,6 +41,7 @@ python3 run_scraper.py
 ### Mac / Linux — every run after
 
 ```bash
+cd job_scraper
 source .venv/bin/activate
 python3 run_scraper.py
 ```
